@@ -95,6 +95,14 @@ fun Greeting(modifier: Modifier = Modifier) {
         ) {
             Text("Github")
         }
+        Button(onClick =
+        {
+            val intent = Intent(context, SecondActivity::class.java)
+            startActivity(context, intent, null)
+        }, modifier = modifier.fillMaxWidth()
+        ) {
+            Text("SecondActivity")
+        }
     }
 }
 
